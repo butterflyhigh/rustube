@@ -428,7 +428,7 @@ fn js_url(html: &str) -> crate::Result<(Url, Option<PlayerResponse>)> {
         _ => get_ytplayer_js(html)?
     };
 
-    Ok((Url::parse(&format!("https://youtube.com{base_js}"))?, player_response.ok()))
+    Ok((Url::parse(&format!("https://www.youtube.com{base_js}"))?, player_response.ok()))
 }
 
 /// Extracts the [`PlayerResponse`] from the watch html.
